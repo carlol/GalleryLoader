@@ -1,6 +1,25 @@
+apply plugin: 'com.novoda.bintray-release'
+
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-android'
+
+publish {
+
+    def groupProjectID = 'io.carlol.android.galleryloader'
+    def artifactProjectID = 'galleryloader'
+    def publishVersionID = '1.0.0'
+
+    userOrg = 'carlol'
+    repoName = 'GalleryLoader'
+    groupId = groupProjectID
+    artifactId = artifactProjectID
+    publishVersion = publishVersionID
+    desc = 'A simple bitmap manager to load image from Android device\'s gallery'
+    website = 'https://github.com/carlol/GalleryLoader'
+
+}
+
 
 android {
     compileSdkVersion 28
@@ -13,7 +32,6 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-
     }
 
     buildTypes {
