@@ -1,0 +1,25 @@
+ext {
+    bintrayRepo = 'GalleryLoader'
+    bintrayName = 'galleryloader'   // Has to be same as your library module name
+
+    publishedGroupId = 'io.carlol.android'
+    libraryName = 'GalleryLoader'
+    artifact = 'galleryloader'     // Has to be same as your library module name
+
+    libraryDescription = 'A simple bitmap manager to load image from Android device\'s gallery'
+
+    // Your github repo link
+    siteUrl = 'https://github.com/carlol/GalleryLoader'
+    gitUrl = 'https://github.com/carlol/GalleryLoader.git'
+    githubRepository= 'carlol/GalleryLoader'
+
+    libraryVersion = '1.0.2'
+
+    developerId = 'carlol'
+    developerName = 'Carlo Luchessa'
+    developerEmail = 'carlo.luchessa@gmail.com'
+
+    licenseName = 'MIT/X11 License'
+    licenseUrl = 'http://opensource.org/licenses/MIT'
+    allLicenses = ["MIT"]
+}
